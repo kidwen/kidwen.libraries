@@ -50,6 +50,7 @@ module.exports = {
             "variableDeclaration": true,
             "variableDeclarationIgnoreFunction": true
         }],
-        'quotes': ["error", "single"]
+        'quotes': ["error", "single"],
+        "no-console": ["error", { allow: ["error"] }]
     },
 };
