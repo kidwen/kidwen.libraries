@@ -12,6 +12,6 @@ export class MainController {
 
     @Get()
     public async getHello(@Query() request: { keyWord?: string }): Promise<SearchResult> {
-        return (await lastValueFrom(this.http.get(`https://www.ximalaya.com/revision/search/main?core=all&kw=${encodeURI(request.keyWord) || ''}&spellchecker=true&device=iPhone&live=true`))).data;
+        return (await lastValueFrom(this.http.get(`https://www.ximalaya.com/revision/search/main?core=all&kw=${encodeURI(request.keyWord || '')}&spellchecker=true&device=iPhone&live=true`))).data;
     }
 }
