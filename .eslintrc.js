@@ -33,6 +33,7 @@ module.exports = {
         '@typescript-eslint/interface-name-prefix': 'off',
         '@typescript-eslint/no-explicit-any': 'error',
         '@typescript-eslint/consistent-type-assertions': 'error',
+        '@typescript-eslint/no-inferrable-types': 'false',
         '@typescript-eslint/explicit-function-return-type': 'error',
         '@typescript-eslint/explicit-member-accessibility': 'error',
         '@typescript-eslint/member-delimiter-style': 'error',

@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { RouterModule, Routes } from '@nestjs/core';
 import { SearchModule } from './modules/search/search.module';
+import { EventsModule } from './modules/events/events.module';
 
 const routers: Routes = [
     {
@@ -12,6 +13,7 @@ const routers: Routes = [
 @Module({
     imports: [
         RouterModule.register(routers),
+        EventsModule,
     ],
     exports: [RouterModule],
 })
